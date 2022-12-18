@@ -1,54 +1,56 @@
-﻿Imports System
-Imports System.Collections.Generic
-Imports System.Linq
-Imports System.Text
-Imports System.Threading.Tasks
-
 Namespace ColorObjectColorizerExample.Model
+
     Friend Class BubbleDataPoint
-        Private privateXArgument As String
-        Public Property XArgument() As String
+
+        Private _XArgument As String, _YArgument As String, _Value As Double, _Weight As Double, _Color As UInteger
+
+        Public Property XArgument As String
             Get
-                Return privateXArgument
+                Return _XArgument
             End Get
+
             Private Set(ByVal value As String)
-                privateXArgument = value
+                _XArgument = value
             End Set
         End Property
-        Private privateYArgument As String
-        Public Property YArgument() As String
+
+        Public Property YArgument As String
             Get
-                Return privateYArgument
+                Return _YArgument
             End Get
+
             Private Set(ByVal value As String)
-                privateYArgument = value
+                _YArgument = value
             End Set
         End Property
-        Private privateValue As Double
-        Public Property Value() As Double
+
+        Public Property Value As Double
             Get
-                Return privateValue
+                Return _Value
             End Get
+
             Private Set(ByVal value As Double)
-                privateValue = value
+                _Value = value
             End Set
         End Property
-        Private privateWeight As Double
-        Public Property Weight() As Double
+
+        Public Property Weight As Double
             Get
-                Return privateWeight
+                Return _Weight
             End Get
+
             Private Set(ByVal value As Double)
-                privateWeight = value
+                _Weight = value
             End Set
         End Property
-        Private privateColor As UInteger
-        Public Property Color() As UInteger
+
+        Public Property Color As UInteger
             Get
-                Return privateColor
+                Return _Color
             End Get
+
             Private Set(ByVal value As UInteger)
-                privateColor = value
+                _Color = value
             End Set
         End Property
 
